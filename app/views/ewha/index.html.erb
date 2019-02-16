@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Agency - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/agency.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<style type="text/css">
+
+@media (min-width: 768px) {
+header .intro-text .intro-heading {
+    font-size: 60px;
+}
+.timeline>li .timeline-image2 {
+    left: 50%;
+    margin-left: -30px;
+}
+.only-mobile {
+    display: none;
+}
+
+.section-subheading {
+    line-height:1;
+    font-size:18px;
+}
+
+.btn-xl {
+    padding: 15px 40px;
+    font-size: 16px;
+}
+}
+
+
+@media (max-width: 767px) {
+.timeline>li .timeline-image2 {
+    width: 30px;
+    height: 30px;
+    left: 0;
+    margin-left: 10px; 
+}
+
+.only-pc {
+    display:none;
+}
+
+.btn-xl {
+    padding: 10px 40px;
+}
+
+}
+
+.timeline>li .timeline-image2 {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    z-index: 100;
+    background-color: #7cc576;
+    color: #fff;
+    border-radius: 100%;
+    border: 7px solid #f1f1f1;
+    text-align: center;
+}
+
+.section-heading{
+    font-weight:100;
+    color:#666666;
+}
+
+.btn-xl {
+    color: #ffffff;
+    background-color: transparent;
+    border-color:#7cc576;
+    font-weight: 100;
+    border-radius: 30px;
+    font-size: 18px;
+}
+
+.service-heading, h4 {
+    color: #555555;
+    
+}
+
+#portfolio .portfolio-item .portfolio-caption h4 {
+    margin-bottom: 5px;
+}
+
+.navbar-default .navbar-toggle {
+    background-color: transparent;
+    border-color:transparent;
+}
+
+.team-member{
+    width:250px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 30px 200px auto 100px;
+}
+
+
+</style>
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Ewha.likelion</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">History</a>
+                    </li>
+                    <!--<li>-->
+                    <!--    <a class="page-scroll" href="#portfolio2">2016</a>-->
+                    <!--</li>-->
+                    <li>
+                        <a class="page-scroll" href="#about">2018</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#team">Staff</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container" style="height:100%; padding:0">
+            <div class="intro-text">
+                    <p class="section-subheading text-muted" style="color:#aeaeae;">
+                        비전공자를 위한 프로그래밍 교육 <span class="likelion">멋쟁이사자처럼</span>
+                    </p>
+                    <div class="intro-heading">이화여대 X 멋<span class="only-pc">쟁이</span>사<span class="only-pc">자처럼</span></div>
+                    <p class="section-subheading text-muted" id="ewha_likelion" style="color:#ffffff;">
+                        <span class="ewha_likelion">"이화여대 멋쟁이사자처럼"</span>은<br>프로그래밍에 관심있는 이화인들이 <br>원하는 IT 서비스를 <span class="only-mobile"><br></span> 직접 런칭할 수 있도록 도와주는<span class="only-mobile"><br></span> 코딩 교육 동아리입니다.
+                        <br>
+                        <span class="section-subheading text-muted" style="font-size:15px; color:#aeaeae;">
+                      
+                    </p>
+                   
+                <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">ABOUT</h2>
+                    <hr>
+                    <p class="text-muted">멋쟁이사자처럼은 어떻게 진행될까요?</p>
+                    <br>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4 col-sm-4">
+                    <img src="img/about/ruby.png">
+                    <h4 class="service-heading"> 코딩 교육</h4>
+                    <p class="text-muted">HTML/CSS<br>JavaScript<br>Ruby on Rails<br> 을 기반으로 하는 웹프로그래밍을 배웁니다.
+
+                    </p>
+                </div> 
+                <div class="col-md-4 col-sm-4">
+                    <img src="img/about/study.png">
+                    <h4 class="service-heading">팀별 스터디</h4>
+                    <p class="text-muted">매주 팀별스터디를 진행하고, <br>세션을 통해 튜터들과 질의응답하는<br> 교육활동을 진행합니다.</p>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <img src="img/about/col.png">
+                    <h4 class="service-heading">해커톤</h4> 
+                    <p class="text-muted">"내 아이디어를 내 손으로 실현하자!"<br>다양한 아이디어톤, 연합해커톤을 통해서<br>직접 서비스를 개발합니다.<br> </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">2015</h2>
+                    <hr>
+                    <p class="text-muted">2015년 이화여대 멋쟁이사자처럼 1기<br>
+                    15명 중 13명이 비전공자였습니다.</p>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-4 portfolio-item">
+                        <img src="img/portfolio/ot.jpg" class="img-responsive" alt="">
+                    <div class="portfolio-caption">
+                        <h4>멋쟁이사자처럼 OT</h4>
+                        <p class="text-muted">15. 06. 20.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 portfolio-item">
+                        <img src="img/portfolio/study.jpg" class="img-responsive" alt="">
+                    <div class="portfolio-caption">
+                        <h4>팀별 스터디</h4>
+                        <p class="text-muted">15. 07. 01. - 08. 31.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 portfolio-item">
+                        <img src="img/portfolio/hack.jpg" class="img-responsive" alt="">
+                    <div class="portfolio-caption">
+                        <h4>해커톤</h4>
+                        <p class="text-muted">15. 09. 19. - 09. 20.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--</section>-->
+    <!-- Portfolio Grid Section -->
+    <!--<section id="portfolio2" class="bg-light-gray">-->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">2016</h2>
+                    <hr>
+                    <p class="text-muted">2016년 이화여대 멋쟁이사자처럼 2기<br>
+                    14명 중 9명이 비전공자였습니다.</p>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-4 portfolio-item">
+                        <img src="img/portfolio/ot2016.jpg" class="img-responsive" alt="">
+                    <div class="portfolio-caption" >
+                        <h4>멋쟁이사자처럼 OT</h4>
+                        <p class="text-muted">16. 03. 19.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 portfolio-item">
+                        <img src="img/portfolio/teamstudy2016.jpg" class="img-responsive" alt="">
+                    <div class="portfolio-caption">
+                        <h4>팀별 스터디</h4>
+                        <p class="text-muted"> 16. 03. 21. - 06. 30.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 portfolio-item">
+                        <img src="img/portfolio/hackathon.jpg" class="img-responsive" alt="">
+                    <div class="portfolio-caption">
+                        <h4>해커톤</h4>
+                        <p class="text-muted"> 16. 08. 29. - 08. 30.</p>
+                    </div>
+                </div>
+            </div>
+            <!--2017 -->
+        </div>
+           <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">2017</h2>
+                    <hr>
+                    <p class="text-muted">2017년 이화여대 멋쟁이사자처럼 3기<br>
+                    12명 중 10명이 비전공자였습니다.</p>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-md-4 col-sm-4 portfolio-item">
+                        <img src="img/portfolio/2017teamstudy.jpg" class="img-responsive" alt="">
+                    <div class="portfolio-caption">
+                        <h4>팀별 스터디</h4>
+                        <p class="text-muted"> 17. 03. 21. - 05. 30.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 portfolio-item">
+                        <img src="img/portfolio/2017ideathon.png" class="img-responsive" alt="">
+                    <div class="portfolio-caption" >
+                        <h4>아이디어톤</h4>
+                        <p class="text-muted">17. 07. 15.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 portfolio-item">
+                        <img src="img/portfolio/2017hackathon.jpg" class="img-responsive" alt="">
+                    <div class="portfolio-caption">
+                        <h4>해커톤</h4>
+                        <p class="text-muted"> 17. 08. 18. - 08. 19.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">2018 일정</h2>
+                    <hr>
+                    <h3 class="section-subheading text-muted"> </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/lion.png" style="height:100%" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="time" style="color: #7cc576;">02. 24. - 03. 08.</h4>
+                                    <h4 class="subheading">2018 멋쟁이사자처럼 선발</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">
+                                        <strong>[지원기간] </strong>  2월24일~ 3월8일 11시59분<br>
+                                        <strong>[1차합격자발표]</strong>  3월 11일<br>
+                                        <strong>[면접]</strong>  3월 12~13일<br>
+                                        <strong>[최종합격자발표]</strong>  3월 14일<br>
+                                        <strong>[이대 멋사 OT]</strong>  3월 15일<br>
+                                        <strong>[전체 멋사 OT]</strong>  3월 17일
+                                        <br> 
+                                        <a href="http://apply.likelion.org" target="_blank">
+                                        <button button type="button" class="btn btn-success" omclick=”window.open(‘http://apply.likelion.org/‘)”;>지원서 제출</button></br>
+                                        </a>
+                                        
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image2">
+                                <!--<img class="img-circle img-responsive" src="img/about/coding.png" style="height:100%" alt="">-->
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="time" style="color: #7cc576;">1학기</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">
+                                        - 주 2-3회 모임 
+                                        <br>&nbsp&nbsp<strong>[정기 튜터세션]</strong> 매주 화요일 오후 6시30분
+                                        <br>&nbsp&nbsp<strong>[서브세션]</strong> 격주 목요일 오후 6시30분 
+                                        <br>&nbsp&nbsp<strong>[팀 스터디]</strong> 매주 1회 (시간은 선발이후 결정)
+                                        <br>
+                                       
+                                        </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image2">
+                                <!--<img class="img-circle img-responsive" src="img/about/project.png" style="height:100%" alt="">-->
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="time" style="color: #7cc576;">여름방학</h4>
+                                    <h4 class="subheading">서비스개발시작/ 심화세션</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">
+                                        - 팀 빌딩 및 팀 프로젝트 진행 <br>
+                                        - 연합해커톤 <br>
+                                        - JavaScript 및 심화세션
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                           <li class="timeline-inverted">
+                            <div class="timeline-image2">
+                                <!--<img class="img-circle img-responsive" src="img/about/col.png" style="height:100%" alt="">-->
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="time" style="color: #7cc576;">8월 중</h4>
+                                    <h4 class="subheading">해커톤</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">
+                                      - 아이디어 구현 및 발표 <br>
+                                      - 우수한 서비스 선발 및 시상 <br>
+                                      - 취업박람회 및 각종 행사 진행 
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image2">
+                                <!--<img class="img-circle img-responsive" src="img/about/project.png" style="height:100%" alt="">-->
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="time" style="color: #7cc576;">2학기</h4>
+                                    <h4 class="subheading">심화세션</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">
+                                        - 6기 자체세션<br>
+                                        - 모바일 앱,서버개발 등 심화세션진행<br>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        
+                       
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <h4 style="color:#ffffff" class="text-center">
+                                    Be Part
+                                    <br>Of Our
+                                    <br>Story!</h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">STAFF</h2>
+                    <hr>
+                    <p class="text-muted">아기사자가 어른사자 될 때까지 -<span class="only-mobile"><br></span> 여러분과 함께 할 운영진입니다.</p>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-1"> </div>
+                <div class="col-sm-3" style = "margin-left: 48.75px">
+                    <div class="team-member">
+                        <img src="img/team/min.jpg" class="img-responsive img-circle" alt="">
+                        <h4>김민정</h4>
+                        <p class="text-muted">컴퓨터공학과 17 </p>
+                        <ul class="list-inline social-buttons">
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="team-member">
+                        <img src="img/team/zun.jpg" class="img-responsive img-circle" alt="">
+                        <h4>김준선</h4>
+                        <p class="text-muted">사이버보안학과 17</p>
+                        <ul class="list-inline social-buttons">
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="team-member">
+                        <img src="img/team/sung.jpg" class="img-responsive img-circle" alt="">
+                        <h4>최성은</h4>
+                        <p class="text-muted">디자인학부 16</p>
+                        <ul class="list-inline social-buttons">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="team-member">
+                        <img src="img/team/seo.jpg" class="img-responsive img-circle" alt="">
+                        <h4>엄서영</h4>
+                        <p class="text-muted">융합콘텐츠학과 16</p>
+                        <ul class="list-inline social-buttons">
+                        </ul>
+                    </div>
+                </div>
+                 <div class="col-sm-3">
+                    <div class="team-member">
+                        <img src="img/team/sun.jpg" class="img-responsive img-circle" alt="">
+                        <h4>김선경</h4>
+                        <p class="text-muted">문헌정보학과 15</p>
+                        <ul class="list-inline social-buttons">
+                        </ul>
+                    </div>
+                </div>
+                 <div class="col-sm-3">
+                    <div class="team-member">
+                        <img src="img/team/so.jpg" class="img-responsive img-circle" alt="">
+                        <h4>김소현</h4>
+                        <p class="text-muted">전자공학과 14</p>
+                        <ul class="list-inline social-buttons">
+                        </ul>
+                    </div>
+                </div>
+                 <div class="col-sm-3">
+                    <div class="team-member">
+                        <img src="img/team/jung.jpg" class="img-responsive img-circle" alt="">
+                        <h4>박정현</h4>
+                        <p class="text-muted">통계학과 16</p>
+                        <ul class="list-inline social-buttons">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+     <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                   <!-- <span class="copyright">Copyright &copy; 2016 멋쟁이사자처럼</span>-->
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="https://www.facebook.com/ewhalikelion/"><i class="fa fa-facebook"></i></a>
+                         </li>
+                        &nbsp&nbsp
+                        <li><a href="https://www.instagram.com/likelion_ewha/"><i class="fa fa-instagram"></i></a>
+                        </li>
+                    </ul> <br>
+                    <h5 style="color: #7cc576; text-transform:none; ">email: ewha@likelion.org </h5> 
+                    <h5 style="color: #7cc576; text-transform:none">kakao yellow ID: ewhalikelion </h5>
+                </div>
+                <div class="col-md-4">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/agency.js"></script>
+
+</body>
+
+</html>
