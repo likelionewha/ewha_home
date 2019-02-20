@@ -1,2 +1,2 @@
-Ewha Likelion 6th
+Ewha Likelion 7th
 Homepage!
