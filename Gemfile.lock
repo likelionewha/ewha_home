@@ -81,7 +81,6 @@ GEM
     mini_portile2 (2.3.0)
     minitest (5.11.3)
     multi_json (1.13.1)
-    mysql2 (0.4.10)
     nio4r (2.2.0)
     nokogiri (1.8.2)
       mini_portile2 (~> 2.3.0)
@@ -173,7 +172,6 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   json (= 1.8.5)
-  mysql2
   rails (= 5.0.2)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
